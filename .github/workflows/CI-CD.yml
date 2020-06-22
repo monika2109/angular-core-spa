@@ -18,5 +18,5 @@ jobs:
         dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
     - run: dotnet build Angular-Core-SPA/Angular-Core-SPA.csproj
     - name: Deploy to ec2 instance
-      run: run:curl -v -u admin:adminadmin -T /home/runner/work/angular-core-spa/angular-core-spa/Angular-Core-SPA/ClientApp/node_modules/node-sass/vendor/linux-x64-72/binding.node 'http://ec2-54-160-79-90.compute-1.amazonaws.com:8080/manager/text/deploy?path=/myangularcorespa_dev_action'
+      run: curl -v -u admin:adminadmin -T /home/runner/work/angular-core-spa/angular-core-spa/Angular-Core-SPA/ClientApp/node_modules/node-sass/vendor/linux-x64-72/binding.node 'http://ec2-54-160-79-90.compute-1.amazonaws.com:8080/manager/text/deploy?path=/myangularcorespa_dev_action'
 
